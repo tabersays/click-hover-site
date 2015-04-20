@@ -1,3 +1,109 @@
 /**
  * Created by taber.fitzgerald on 4/16/2015.
+ * This is the base template for js
  */
+function afunct1(e) {
+    if ($("#men1").hasClass("selected")) {
+        $("#men1").toggleClass("red").toggleClass("selected");
+        $("#blk1").toggleClass("hide");
+    }
+    else {
+        $("#men1").removeClass("selected").addClass("red");
+        $("#men2").removeClass("selected").addClass("red");
+        $("#men3").removeClass("selected").addClass("red");
+        $("#men4").removeClass("selected").addClass("red");
+        $("#men5").removeClass("selected").addClass("red");
+        $("#blk1").addClass("hide");
+        $("#blk2").addClass("hide");
+        $("#blk3").addClass("hide");
+        $("#blk4").addClass("hide");
+        $("#blk5").addClass("hide");
+        $("#men1").removeClass("red").addClass("selected");
+        $("#blk1").removeClass("hide");
+    }
+}
+function afunct2(e) {
+    if ($("#men2").hasClass("selected")) {
+        $("#men2").toggleClass("red").toggleClass("selected");
+        $("#blk2").toggleClass("hide");
+    }
+    else {
+        $("#men1").removeClass("selected").addClass("red");
+        $("#men2").removeClass("selected").addClass("red");
+        $("#men3").removeClass("selected").addClass("red");
+        $("#men4").removeClass("selected").addClass("red");
+        $("#men5").removeClass("selected").addClass("red");
+        $("#blk1").addClass("hide");
+        $("#blk2").addClass("hide");
+        $("#blk3").addClass("hide");
+        $("#blk4").addClass("hide");
+        $("#blk5").addClass("hide");
+        $("#men2").removeClass("red").addClass("selected");
+        $("#blk2").removeClass("hide");
+    }
+}
+function afunct3(e) {
+    if ($("#men3").hasClass("selected")) {
+        $("#men3").toggleClass("red").toggleClass("selected");
+        $("#blk3").toggleClass("hide");
+    }
+    else {
+        $("#men1").removeClass("selected").addClass("red");
+        $("#men2").removeClass("selected").addClass("red");
+        $("#men3").removeClass("selected").addClass("red");
+        $("#men4").removeClass("selected").addClass("red");
+        $("#men5").removeClass("selected").addClass("red");
+        $("#blk1").addClass("hide");
+        $("#blk2").addClass("hide");
+        $("#blk3").addClass("hide");
+        $("#blk4").addClass("hide");
+        $("#blk5").addClass("hide");
+        $("#men3").removeClass("red").addClass("selected");
+        $("#blk3").removeClass("hide");
+    }
+}
+function afunct4(e) {
+    if ($("#men4").hasClass("selected")) {
+        $("#men4").toggleClass("red").toggleClass("selected");
+        $("#blk4").toggleClass("hide");
+    }
+    else {
+        $("#men1").removeClass("selected").addClass("red");
+        $("#men2").removeClass("selected").addClass("red");
+        $("#men3").removeClass("selected").addClass("red");
+        $("#men4").removeClass("selected").addClass("red");
+        $("#men5").removeClass("selected").addClass("red");
+        $("#blk1").addClass("hide");
+        $("#blk2").addClass("hide");
+        $("#blk3").addClass("hide");
+        $("#blk4").addClass("hide");
+        $("#blk5").addClass("hide");
+        $("#men4").removeClass("red").addClass("selected");
+        $("#blk4").removeClass("hide");
+    }
+}
+function afunct5(e) {
+    if ($("#men5").hasClass("selected")) {
+        $("#men5").toggleClass("red").toggleClass("selected");
+        $("#blk5").toggleClass("hide");
+    }
+    else {
+        $("#men1").removeClass("selected").addClass("red");
+        $("#men2").removeClass("selected").addClass("red");
+        $("#men3").removeClass("selected").addClass("red");
+        $("#men4").removeClass("selected").addClass("red");
+        $("#men5").removeClass("selected").addClass("red");
+        $("#blk1").addClass("hide");
+        $("#blk2").addClass("hide");
+        $("#blk3").addClass("hide");
+        $("#blk4").addClass("hide");
+        $("#blk5").addClass("hide");
+        $("#men5").removeClass("red").addClass("selected");
+        $("#blk5").removeClass("hide");
+    }
+}
+$(document).ready(function(){
+    $("#myInput").keypress(function(){
+        alert("something");
+    })
+})
