@@ -12,24 +12,14 @@ function shopAll(e) {
         $("#shop").removeClass("hide");
     }
 }
-function afunct2(e) {
-    if ($("#men2").hasClass("selected")) {
-        $("#men2").toggleClass("red").toggleClass("selected");
-        $("#blk2").toggleClass("hide");
+function shopCell(e) {
+    if ($("#shopCell").hasClass("selected")) {
+        $("#shopCell").removeClass("selected");
+        $("#cellphones").addClass("hide");
     }
     else {
-        $("#men1").removeClass("selected").addClass("red");
-        $("#men2").removeClass("selected").addClass("red");
-        $("#men3").removeClass("selected").addClass("red");
-        $("#men4").removeClass("selected").addClass("red");
-        $("#men5").removeClass("selected").addClass("red");
-        $("#blk1").addClass("hide");
-        $("#blk2").addClass("hide");
-        $("#blk3").addClass("hide");
-        $("#blk4").addClass("hide");
-        $("#blk5").addClass("hide");
-        $("#men2").removeClass("red").addClass("selected");
-        $("#blk2").removeClass("hide");
+        $("#shopCell").addClass("selected");
+        $("#cellphones").removeClass("hide");
     }
 }
 function afunct3(e) {
