@@ -2,24 +2,14 @@
  * Created by taber.fitzgerald on 4/16/2015.
  * This is the base template for js
  */
-function afunct1(e) {
-    if ($("#men1").hasClass("selected")) {
-        $("#men1").toggleClass("red").toggleClass("selected");
-        $("#blk1").toggleClass("hide");
+function shopAll(e) {
+    if ($("#shopAll").hasClass("selected")) {
+        $("#shopAll").removeClass("selected");
+        $("#shop").addClass("hide");
     }
     else {
-        $("#men1").removeClass("selected").addClass("red");
-        $("#men2").removeClass("selected").addClass("red");
-        $("#men3").removeClass("selected").addClass("red");
-        $("#men4").removeClass("selected").addClass("red");
-        $("#men5").removeClass("selected").addClass("red");
-        $("#blk1").addClass("hide");
-        $("#blk2").addClass("hide");
-        $("#blk3").addClass("hide");
-        $("#blk4").addClass("hide");
-        $("#blk5").addClass("hide");
-        $("#men1").removeClass("red").addClass("selected");
-        $("#blk1").removeClass("hide");
+        $("#shopAll").addClass("selected");
+        $("#shop").removeClass("hide");
     }
 }
 function afunct2(e) {
@@ -103,7 +93,4 @@ function afunct5(e) {
     }
 }
 $(document).ready(function(){
-    $("#myInput").keypress(function(){
-        alert("something");
-    })
-})
+});
