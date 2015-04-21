@@ -22,6 +22,17 @@ function shopCell(e) {
         $("#cellphones").removeClass("hide");
     }
 }
+
+function shopComp(e) {
+    if ($("#shopComp").hasClass("selected")) {
+        $("#shopComp").removeClass("selected");
+        $("#computers").addClass("hide");
+    }
+    else {
+        $("#shopComp").addClass("selected");
+        $("#computers").removeClass("hide");
+    }
+}
 function afunct3(e) {
     if ($("#men3").hasClass("selected")) {
         $("#men3").toggleClass("red").toggleClass("selected");

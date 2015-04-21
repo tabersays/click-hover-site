@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <!-- Took to much time configuring divbraries -->
@@ -17,28 +18,30 @@
           href="https://ajax.googleapis.com/ajax/divbs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
     <script src="jquery-ui.min.js"></script>
     <script src="click.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Web 9: Computer Supplies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Web 9: Computer Supplies</title>
 </head>
 
 <body text="#0066CC" link="#00CCFF">
 <div id="container">
-  <div id="header">
-    <div class="logo"><img src="logo.png" width="94" height="50"></div>
-  </div>
-  <div id="navbar">
-    <ul>
-      <li id="shopAll">
-           <span onclick="shopAll(this)">Shop All Products</span>
-      </li>
-      <li><span href="deal.html">Deals &amp; Gifts</span></li>
-      <li><span href="services.html">Services</span></li>
-  <li><span href="signup.html">Sign Up Today</span></li></ul></div>
+    <div id="header">
+        <div class="logo"><img src="logo.png" width="94" height="50"></div>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li id="shopAll">
+                <span onclick="shopAll(this)">Shop All Products</span>
+            </li>
+            <li><span href="deal.html">Deals &amp; Gifts</span></li>
+            <li><span href="services.html">Services</span></li>
+            <li><span href="signup.html">Sign Up Today</span></li>
+        </ul>
+    </div>
     <div id="shop" class="hide menuBar">
         <ul>
             <li id="shopCell"><span onclick="shopCell(this)">Cell phones & communication</span></li>
-            <li><span href="">Computers and tablets</span></li>
+            <li id="shopComp"><span onclick="shopComp(this)">Computers and tablets</span></li>
             <li><span href="">Computers hardware</span></li>
             <li><span href="">Consumer electronics</span></li>
             <li><span href="">Fine jewelry</span></li>
@@ -58,11 +61,17 @@
         </ul>
 
     </div>
-  <div id="content">
-  <p><img src="slider_2.jpg" width="1500" height="550"></p>
-  </div>
-  
-  <div class="image"><img src="mockup.png" width="1000" height="700" /></div>
+    <div id="computers" class="hide menuBar">
+        <ul>
+            <li><span href="">Computers</span></li>
+            <li><span href="">Peripherals</span></li>
+        </ul>
+    </div>
+    <div id="content">
+        <p><img src="slider_2.jpg" width="1500" height="550"></p>
+    </div>
+
+    <div class="image"><img src="mockup.png" width="1000" height="700"/></div>
 
 </div>
 </body>
