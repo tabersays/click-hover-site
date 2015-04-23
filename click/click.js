@@ -33,6 +33,17 @@ function shopComp(e) {
         $("#computers").removeClass("hide");
     }
 }
+
+function shopCompHard(e) {
+    if ($("#shopCompHard").hasClass("selected")) {
+        $("#shopCompHard").removeClass("selected");
+        $("#computerHard").addClass("hide");
+    }
+    else {
+        $("#shopCompHard").addClass("selected");
+        $("#computerHard").removeClass("hide");
+    }
+}
 function afunct3(e) {
     if ($("#men3").hasClass("selected")) {
         $("#men3").toggleClass("red").toggleClass("selected");
