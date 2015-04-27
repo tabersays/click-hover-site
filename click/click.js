@@ -2,10 +2,13 @@
  * Created by taber.fitzgerald on 4/16/2015.
  * This is the base template for js
  */
+function redirect(path){
+
+
+
+}
 $(document).ready(function(){
     $('.click').on('click', function(e){
-        console.log($(e.target));
-
         if($(e.target).hasClass('selected')){
             $(e.target).siblings('div').addClass('hide');
             if($(e.target).hasClass('c1')){
