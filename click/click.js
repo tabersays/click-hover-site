@@ -3,11 +3,11 @@
  * This is the base template for js
  */
 function redirect(path){
-
-
+    Cookies.set('test', 'Exactly as named');
 
 }
 $(document).ready(function(){
+    redirect('hello');
     $('.click').on('click', function(e){
         if($(e.target).hasClass('selected')){
             $(e.target).siblings('div').addClass('hide');
