@@ -8,21 +8,43 @@ $(document).ready(function(){
 
         if($(e.target).hasClass('selected')){
             $(e.target).siblings('div').addClass('hide');
-            if($(e.target).hasClass('one')){
-
+            if($(e.target).hasClass('c1')){
+                $('.one').addClass('hide').removeClass('selected');
+                $('.two').addClass('hide');
+                $('.c1').removeClass('selected');
+                $('.c2').removeClass('selected');
             }
-            if($(e.target).hasClass('two')){
-
+            if($(e.target).hasClass('c2')){
+                $('.two').addClass('hide').removeClass('selected');
+                $('.c2').removeClass('selected');
             }
-            if($(e.target).hasClass('three')){
-
+            if($(e.target).hasClass('c0')){
+                $('.one').addClass('hide').removeClass('selected');
+                $('.two').addClass('hide').removeClass('selected');
+                $('.c1').removeClass('selected');
+                $('.c2').removeClass('selected');
             }
-            else{
-
-            }
+            $(e.target).siblings().removeClass('selected');
             $(e.target).removeClass('selected');
         }
         else{
+            if($(e.target).hasClass('c1')){
+                $('.one').addClass('hide').removeClass('selected');
+                $('.two').addClass('hide');
+                $('.c1').removeClass('selected');
+                $('.c2').removeClass('selected');
+            }
+            if($(e.target).hasClass('c2')){
+                $('.two').addClass('hide').removeClass('selected');
+                $('.c2').removeClass('selected');
+            }
+            if($(e.target).hasClass('c0')){
+                $('.one').addClass('hide').removeClass('selected');
+                $('.two').addClass('hide').removeClass('selected');
+                $('.c1').removeClass('selected');
+                $('.c2').removeClass('selected');
+            }
+            $(e.target).siblings().removeClass('selected');
             $(e.target).siblings().removeClass('hide');
             $(e.target).addClass('selected');
         }
