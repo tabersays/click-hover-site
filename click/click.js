@@ -39,7 +39,6 @@ $(document).ready(function () {
             }
             $(e.target).siblings().removeClass('selected');
             $(e.target).removeClass('selected');
-            redirect();
         }
         else {
             if ($(e.target).hasClass('c1')) {
@@ -61,7 +60,6 @@ $(document).ready(function () {
             $(e.target).siblings().removeClass('selected');
             $(e.target).siblings().removeClass('hide');
             $(e.target).addClass('selected');
-            redirect();
         }
     })
 });
