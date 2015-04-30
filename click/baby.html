@@ -1,170 +1,586 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Web 9: Computer Supplies</title>
-<style type="text/css">
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Start CSS */
-#container {
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 10px;
-	width: 100%;
-	background-color: #E4E2E6;
-}
-#header {
-	padding-top: 5px;
-	padding-right: 15%;
-	padding-bottom: 5px;
-	padding-left: 15%;
-	border-bottom-width: thin;
-	border-bottom-style: solid;
-	border-bottom-color: #CCC;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #FFF;
-}
-
-
-#navbar {
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #FC3;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 15%;
-	padding-right: 15%;
-	font-weight: bold;
-}
-#navbar ul {
-	list-style-type: none;
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#navbar ul li {
-	display: inline;
-	padding: 10px;
-}
-#navbar ul li a {
-	text-decoration: none;
-	color: #06C;
-}
-#content {
-	border: 1px solid #CCC;
-	background-color: #FFF;
-	padding-right: 0%;
-	padding-bottom: 10px;
-	padding-left: 0%;
-	width: 1000px;
-	height: 375px;
-	margin-right: auto;
-	margin-left: auto;
-}
-#footer {
-	clear: both;
-	float: left;
-}
-#content .column {
-	width: 290px;
-	float: left;
-	margin-right: 1%;
-	margin-left: 1%;
-	height: 100px;
-}
-#content .column {
-	height: 180px;
-	padding: 10px;
-	border: thin solid #CCC;
-	float: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#content img {
-	width: 1000px;
-	height: 375px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-body,td,th {
-	font-family: Arial, Helvetica, sans-serif;
-}
-a:hover {
-	color: #0CF;
-}
-#content .image {
-
-}
-#container .image {
-	text-align: center;
-}
-#container .image img {
-	text-align: center;
-}
-</style>
+	<!-- JQuery -->
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script src="click.js"></script>
+	<script src="js-cookie-master/src/js.cookie.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Web 9: Computer Supplies</title>
 </head>
 
 <body text="#0066CC" link="#00CCFF">
 <div id="container">
-  <div id="header">
-    <div class="logo"><img src="logo.png" width="94" height="50"></div>
-  </div>
-  <div id="navbar">
-    <ul>
-      <li><a href="shop.html">Shop All Products</a></li>
-      <li><a href="deal.html">Deals &amp; Gifts</a></li>
-      <li><a href="services.html">Services</a></li>
-  <li><a href="signup.html">Sign Up Today</a></li></ul></div>
-  <div class="image"><img src="baby.jpg" width="800" height="1594" /></div>
+	<div id="header">
+		<div class="logo"><img src="logo.png" width="94" height="50"></div>
+	</div>
+	<div id="navbar">
+		<span class="click c0" >Shop All Products |</span>
+		<span>Deals & Gifts |</span>
+		<span>Services |</span>
+		<span>Sign Up Today</span>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="hide zero" style="position:absolute;left:0px;top:100px; z-index: 10;">
+			<div >
+				<span class="click c1" >Cell phones & communication |</span>
+
+				<div class="hide one">
+					<div>
+						<span class="click c2" >Cell phones</span>
+
+						<div class="hide two"style="position:absolute;left:-20px;">
+                            <span>
+                                <a href="test.html">Cell Phone Accessories</a>
+                                <a href="test.html">Cell Phone Clearance Deals</a>
+                                <a href="test.html">Locked Carrier Phones</a>
+                                <a href="test.html">Prepaid Phones</a>
+                                <a href="test.html">Smart Watches</a>
+                                <a href="test.html">Unlocked Phones</a>
+                                <a href="test.html">3G Embedded Tablets</a>
+                                <a href="test.html">4G Embedded Tablets</a>
+                            </span>
+						</div>
+					</div>
+
+					<div>
+						<span class="click c2" >Communication</span>
+
+						<div class="hide two"style="position:absolute;left:-20px;">
+                            <span>
+                                <a href="test.html">2-Way Radios</a>
+                                <a href="test.html">A/V Conferencing</a>
+                                <a href="test.html">Business Phone Systems</a>
+                                <a href="test.html">Corded Phones</a>
+                                <a href="test.html">Cordless Phones</a>
+                                <a href="test.html">Office Headsets</a>
+                                <a href="test.html">Phone Accessories</a>
+                                <a href="test.html">VOIP Phones</a>
+                            </span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Computers and tablets |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Computers |</span>
+						<div class="hide two"style="position:absolute;left:-100px;">
+
+                            <span>
+                                <a href="test.html">All-in-One Computers</a>
+                                <a href="test.html">Barebone Kits</a>
+                                <a href="test.html">Chromebooks</a>
+                                <a href="test.html">Desktops</a>
+                                <a href="test.html">Gaming PCs</a>
+                                <a href="laptop.html" onclick="redirect()">Laptops / Notebooks</a>
+                                <a href="test.html">Monitors</a>
+                                <a href="test.html">Refurbished Desktops</a>
+                                <a href="test.html">Servers</a>
+                                <a href="test.html">Tablets & eReaders</a>
+                                <a href="test.html">Thin Client</a>
+                                <a href="test.html">Ultrabooks</a>
+                                <a href="test.html">Workstations</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Peripherals</span>
+						<div class="hide two"style="position:absolute;left:-100px;">
+                            <span>
+                                <a href="test.html">Computer Speakers</a>
+                                <a href="test.html">Duplicators</a>
+                                <a href="test.html">External Storage</a>
+                                <a href="test.html">Keyboards & Mice</a>
+                                <a href="test.html">Power Protection</a>
+                                <a href="test.html">Projectors & Screens</a>
+                                <a href="test.html">Printers</a>
+                                <a href="test.html">Routers</a>
+                                <a href="test.html">USB Drives</a>
+                                <a href="test.html">USB Hubs</a>
+                                <a href="test.html">Scanners</a>
+                                <a href="test.html">Webcams</a>
+                                <a href="test.html">Workstations</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div>
+				<span class="click c1">Computers hardware |</span>
+
+				<div class="hide one">
+					<div>
+						<span class="click c2">Components |</span>
+						<div class="hide two"style="position:absolute;left:-300px;">
+
+                            <span>
+                                <a href="test.html">Barebone Kits</a>
+                                <a href="test.html">CD/DVD/Blu-ray Burners</a>
+                                <a href="test.html">Computer Cases</a>
+                                <a href="test.html">CPU Processors</a>
+                                <a href="test.html">Drive Enclosures</a>
+                                <a href="test.html">Fans & Cooling</a>
+                                <a href="test.html">Flash Card Readers</a>
+                                <a href="test.html">Hard Drives</a>
+                                <a href="test.html">Interface Cards</a>
+                                <a href="flashdrive.html" onclick="redirect()">Memory</a>
+                                <a href="test.html">Motherboards</a>
+                                <a href="test.html">Power Supplies</a>
+                                <a href="test.html">Removeable Storage</a>
+                                <a href="test.html">Solid State Drives</a>
+                                <a href="test.html">Sound Cards</a>
+                                <a href="test.html">Video / Graphics Cards</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Networking</span>
+						<div class="hide two"style="position:absolute;left:-300px;">
+                            <span>
+                                <a href="test.html">Enterprise Networking</a>
+                                <a href="test.html">Ethernet Switches</a>
+                                <a href="test.html">Home Networking</a>
+                                <a href="test.html">KVM / KVMP</a>
+                                <a href="test.html">Modems</a>
+                                <a href="test.html">Network Attached Storage</a>
+                                <a href="test.html">Network Cables</a>
+                                <a href="test.html">Network Cards</a>
+                                <a href="test.html">Powerline</a>
+                                <a href="test.html">Print Servers</a>
+                                <a href="test.html">Racks & Enclosures</a>
+                                <a href="test.html">Routers & Gateways</a>
+                                <a href="test.html">Thin & Zero Clients</a>
+                                <a href="test.html">VOIP Gateways</a>
+                                <a href="test.html">Wireless Networking</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Consumer electronics |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Electronics |</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+
+                            <span>
+                                <a href="test.html">Action Cameras</a>
+                                <a href="telescope.html" onclick="redirect()">Binoculars & Telescopes</a>
+                                <a href="test.html">Camcorders & Video Cameras</a>
+                                <a href="test.html">Cameras</a>
+                                <a href="test.html">Digital Photo Frames</a>
+                                <a href="test.html">Electronics Accessories</a>
+                                <a href="test.html">GPS & Navigation</a>
+                                <a href="test.html">Hobby Electronics</a>
+                                <a href="test.html">Marine Electronics</a>
+                                <a href="test.html">Metal Detectors</a>
+                                <a href="test.html">Microscopes</a>
+                                <a href="test.html">Radar Detectors</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">TV & Audio</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+                            <span>
+                                <a href="test.html">Blu-Ray Players</a>
+                                <a href="test.html">Car Audio & Video</a>
+                                <a href="test.html">Digital Signage Systems</a>
+                                <a href="test.html">Headphones</a>
+                                <a href="test.html">Home Audio</a>
+                                <a href="test.html">Home Media Players</a>
+                                <a href="test.html">Home Theater</a>
+                                <a href="test.html">Home Video</a>
+                                <a href="test.html">MP3 Players</a>
+                                <a href="test.html">Portable Audio & Video</a>
+                                <a href="test.html">Pro Audio</a>
+                                <a href="test.html">Soundbar Speakers</a>
+                                <a href="test.html">Speakers</a>
+                                <a href="test.html">Televisions</a>
+                                <a href="test.html">TV Accessories & Mounts</a>
+                            </span>
+
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Security & Automation</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+                            <span>
+                                <a href="test.html">Security & Surveillance</a>
+                                <a href="baby.html" onclick="redirect()">Baby Monitors</a>
+                                <a href="test.html">Network Security Cameras</a>
+                                <a href="test.html">Security Cables & Accessories</a>
+                                <a href="test.html">Spy Gear</a>
+                                <a href="test.html">Home Automation</a>
+                                <a href="test.html">Appliance Control</a>
+                                <a href="test.html">Front Door & Intercoms</a>
+                                <a href="test.html">Home Controllers</a>
+                                <a href="test.html">Insteon Platform</a>
+                                <a href="test.html">Lighting Control</a>
+                                <a href="test.html">Sensors</a>
+                                <a href="test.html">Starter Kits</a>
+                                <a href="test.html">Thermostats & Climate</a>
+                                <a href="test.html">Z-Wave Platform</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Fine jewelry |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Fine Jewelry |</span>
+						<div class="hide two"style="position:absolute;left:-200px;">
+
+                            <span>
+                                <a href="test.html">Earrings</a>
+                                <a href="test.html">Jewelry Holders & Organizers</a>
+                                <a href="test.html">Jewelry Boxes</a>
+                                <a href="test.html">Necklaces</a>
+                                <a href="test.html">Pendants & Charms</a>
+                                <a href="test.html">Rings</a>
+                                <a href="test.html">Watches</a>
+                            </span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Gaming |</span>
+				<div class="hide one">
+					<div>
+						<span class="click">Games |</span>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Health, fitness & sports |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Sports & Outdoors |</span>
+						<div class="hide two"style="position:absolute;left:-800px;">
+
+                            <span>
+                                <a href="test.html">2-Way Radios</a>
+                                <a href="test.html">Binoculars</a>
+                                <a href="test.html">Boating & Marine</a>
+                                <a href="test.html">Camping & Hiking</a>
+                                <a href="test.html">Canteens & Coolers</a>
+                                <a href="test.html">Emergency Preparedness</a>
+                                <a href="test.html">Hunting Scopes</a>
+                                <a href="test.html">Knives / Multi-Tools</a>
+                                <a href="test.html">Outdoor Pest Control</a>
+                                <a href="test.html">Outdoor Sports</a>
+                                <a href="test.html">Telescopes</a>
+                                <a href="test.html">Water Sports</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Exercise & Fitness</span>
+						<div class="hide two"style="position:absolute;left:-100px;">
+                            <span>
+                                <a href="test.html">Exercise & Fitness</a>
+                                <a href="test.html">Monitors & Pedometers</a>
+                                <a href="test.html">Fitness Equipment</a>
+                            </span>
+
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Health & Beautiful</span>
+						<div class="hide two"style="position:absolute;left:-100px;">
+                            <span>
+                                <a href="test.html">Baby & Toddler</a>
+                                <a href="test.html">Bathroom Scales</a>
+                                <a href="test.html">Beauty Care</a>
+                                <a href="test.html">Dental Care</a>
+                                <a href="test.html">First Aid</a>
+                                <a href="curlingiron.html" onclick="redirect()">Hair Care</a>
+                                <a href="test.html">Personal Care</a>
+                                <a href="test.html">Personal Therapy</a>
+                                <a href="test.html">Shavers</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Home goods |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">House & Garden |</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+
+                            <span>
+                                <a href="test.html">Barbeque Grills</a>
+                                <a href="test.html">Fabric Cares</a>
+                                <a href="test.html">Floor Care</a>
+                                <a href="test.html">Heating, Cooling & Air</a>
+                                <a href="test.html">Lamps & Lighting</a>
+                                <a href="test.html">Lawn Mowers</a>
+                                <a href="test.html">Outdoor Fire Pits & Heaters</a>
+                                <a href="test.html">Outdoor Power Equipment</a>
+                                <a href="test.html">Patio, Lawn & Garden</a>
+                                <a href="test.html">Pool Supplies</a>
+                                <a href="test.html">Tools</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Home Furnishings</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+                            <span>
+                                <a href="test.html">Bar Stools</a>
+                                <a href="test.html">Bedding</a>
+                                <a href="nightstand.html" onclick="redirect()">Bedroom Furniture</a>
+                                <a href="test.html">Clocks</a>
+                                <a href="test.html">Dining Room Furniture</a>
+                                <a href="test.html">Entertainment Furniture</a>
+                                <a href="test.html">Home Decor</a>
+                                <a href="test.html">Kids Furniture</a>
+                                <a href="test.html">Living Room Furniture</a>
+                                <a href="test.html">Mattresses</a>
+                                <a href="test.html">Patio Furniture</a>
+                                <a href="test.html">Rugs</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Luggage, bags & cases |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Bags & Cases |</span>
+						<div class="hide two"style="position:absolute;left:-500px;">
+
+                            <span>
+                                <a href="test.html">Backpacks</a>
+                                <a href="test.html">Camera Bags</a>
+                                <a href="test.html">Cell Phone Cases</a>
+                                <a href="test.html">eReaders Cases</a>
+                                <a href="laptopbag.html" onclick="redirect()">Laptop Bags</a>
+                                <a href="test.html">Laptop Sleeves</a>
+                                <a href="test.html">Messenger Bags</a>
+                                <a href="test.html">Netbook Cases</a>
+                                <a href="test.html">Netbook Sleeves</a>
+                                <a href="test.html">Tablet Cases</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Luggage</span>
+						<div class="hide two"style="position:absolute;left:-300px;">
+                            <span>
+                                <a href="test.html">Carry On</a>
+                                <a href="test.html">Duffel Bags</a>
+                                <a href="test.html">Garment Bags</a>
+                                <a href="test.html">Luggage Accessories</a>
+                                <a href="test.html">Luggage Sets</a>
+                                <a href="test.html">Upright Suitcases</a>
+                                <a href="test.html">Travel Accessories</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Office & supplies |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Office Supplies |</span>
+						<div class="hide two" style="position:absolute;left:-1250px;">
+
+                            <span>
+                                <a href="test.html">Binders & Laminators</a>
+                                <a href="test.html">Calendars & Planners</a>
+                                <a href="test.html">Classroom & Teaching</a>
+                                <a href="test.html">Cleaning & Janitorial</a>
+                                <a href="clipboard.html" onclick="redirect()">Clipboard & Portfolios</a>
+                                <a href="test.html">Cutting & Measuring Devices</a>
+                                <a href="test.html">Desk Organizers</a>
+                                <a href="test.html">Filing Products</a>
+                                <a href="test.html">Labels & Label Makers</a>
+                                <a href="test.html">Mailing & Shipping</a>
+                                <a href="test.html">Paper & Printable Media</a>
+                                <a href="test.html">Pens, Pencils & Markers</a>
+                                <a href="test.html">Staplers & Punches</a>
+                                <a href="test.html">Tapes & Fasteners</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Office Furniture</span>
+						<div class="hide two "style="position:absolute;left:-1200px;">
+                            <span>
+                                <a href="test.html">Bookcases</a>
+                                <a href="test.html">Chairs & Seating</a>
+                                <a href="test.html">Coat Racks</a>
+                                <a href="test.html">Computer Furniture</a>
+                                <a href="test.html">Desks & Workstations</a>
+                                <a href="test.html">Filing Cabinets</a>
+                                <a href="test.html">Furniture Collections</a>
+                                <a href="test.html">LAN Stations / Benches</a>
+                                <a href="test.html">Magazine Racks</a>
+                                <a href="test.html">Office Decor</a>
+                                <a href="test.html">Racks & Enclosures</a>
+                                <a href="test.html">Reception Furniture</a>
+                                <a href="test.html">Storage Cabinets & Safes</a>
+                                <a href="test.html">Tablets</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<span class="click c1">Tools & workshop |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Computer Tools |</span>
+						<div class="hide two"style="position:absolute;left:-600px;">
+
+                            <span>
+                                <a href="test.html">Cleaning Kits</a>
+                                <a href="test.html">Compressed Air Dusters</a>
+                                <a href="test.html">Computer Toolkits</a>
+                                <a href="test.html">Electrical Testers</a>
+                                <a href="test.html">Media Cleaning Kits</a>
+                                <a href="test.html">Other Computer Tools</a>
+                                <a href="test.html">Screen Cleaners</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Work Tools</span>
+						<div class="hide two"style="position:absolute;left:-1000px;">
+                            <span>
+                                <a href="test.html">Air Compressors</a>
+                                <a href="test.html">Electrical Supplies</a>
+                                <a href="test.html">Flashlights & Lanterns</a>
+                                <a href="test.html">Garage & Workshop</a>
+                                <a href="test.html">General Tools</a>
+                                <a href="test.html">Generators</a>
+                                <a href="test.html">Hand Tools</a>
+                                <a href="test.html">Ladders & Scaffolding</a>
+                                <a href="test.html">Other Tools</a>
+                                <a href="test.html">Power Tools</a>
+                                <a href="test.html">Speciality Tools</a>
+                                <a href="test.html">Tool Organizers</a>
+                                <a href="test.html">Tool Sets</a>
+                                <a href="test.html">Wholesale Tools</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div >
+				<span class="click c1">Toys, games & hobbies |</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Toys & Games |</span>
+						<div class="hide two" style="position:absolute;left:-500px;">
+
+                            <span>
+                                <a href="test.html">Building Toys</a>
+                                <a href="test.html">Dolls & Doll Houses</a>
+                                <a href="test.html">Electronic Toys</a>
+                                <a href="test.html">Family Board Games</a>
+                                <a href="test.html">Kids Bikes & Scooters</a>
+                                <a href="test.html">Learning Toys</a>
+                                <a href="test.html">RC Toys</a>
+                                <a href="test.html">Video Games</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Hobby Electronics</span>
+						<div class="hide two" style="position:absolute;left:-400px;">
+                            <span>
+                                <a href="test.html">Arduino Components</a>
+                                <a href="test.html">Arduino Kits</a>
+                                <a href="drone.html" onclick="redirect()">Drones</a>
+                                <a href="test.html">Drone Accessories</a>
+                                <a href="test.html">Hobby Electronic Tools</a>
+                                <a href="test.html">Metal Detectors</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div >
+				<span class="click c1">Vehicle & marine</span>
+				<div class="hide one">
+					<div>
+						<span class="click c2">Automotive |</span>
+						<div class="hide two" style="position:absolute;left:-600px;">
+
+                            <span class="pull-right">
+                                <a href="test.html">Car Audio & Video</a>
+                                <a href="test.html">Car Security & Safety</a>
+                                <a href="test.html">Car Speakers</a>
+                                <a href="test.html">Car Stereo Head Units</a>
+                                <a href="test.html">Car Subwoofers</a>
+                                <a href="test.html">GPS Navigation</a>
+                                <a href="test.html">Radar Detectors</a>
+                            </span>
+						</div>
+					</div>
+					<div>
+						<span class="click c2">Boating & Marine</span>
+						<div id="left" class="hide two" style="position:absolute;left:-400px;">
+                            <span >
+                                <a href="test.html">Boat Outfitting</a>
+                                <a href="boatradio.html" onclick="redirect()">Marine Audio</a>
+                                <a href="test.html">Marine Communications</a>
+                                <a href="test.html">Marine Safety</a>
+                                <a href="test.html">Navigation & Location</a>
+                            </span>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="image"><img src="baby.jpg" width="800" height="1594" /></div>
 
 </div>
 </body>
