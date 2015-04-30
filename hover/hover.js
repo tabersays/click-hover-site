@@ -25,13 +25,15 @@ $(document).ready(function () {
             $('.c1').removeClass('selected');
             $('.c2').removeClass('selected');
         }
-        if ($(e.target).hasClass('c2')) {
+        else if ($(e.target).hasClass('c2')) {
             $('.two').addClass('hide').removeClass('selected');
             $('.c2').removeClass('selected');
         }
-        if ($(e.target).hasClass('c0')) {
+        else {
+            $('.zero').addClass('hide').removeClass('selected');
             $('.one').addClass('hide').removeClass('selected');
             $('.two').addClass('hide').removeClass('selected');
+            $('.c0').removeClass('selected');
             $('.c1').removeClass('selected');
             $('.c2').removeClass('selected');
         }
