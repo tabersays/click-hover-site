@@ -13,6 +13,14 @@ function redirect() {
 
 
 }
+function reset(){
+    $('.zero').addClass('hide');
+    $('.one').addClass('hide');
+    $('.two').addClass('hide');
+    $('.c0')
+    $('.c1')
+    $('.c2')
+}
 
 $(document).ready(function () {
     start = new Date();
@@ -22,20 +30,20 @@ $(document).ready(function () {
         if ($(e.target).hasClass('c1')) {
             $('.one').addClass('hide').removeClass('selected');
             $('.two').addClass('hide');
-            $('.c1').removeClass('selected');
-            $('.c2').removeClass('selected');
+            $('.c1').children().siblings().removeClass('selected');
+            $('.c2').children().siblings().removeClass('selected');
         }
         else if ($(e.target).hasClass('c2')) {
             $('.two').addClass('hide').removeClass('selected');
-            $('.c2').removeClass('selected');
+            $('.c2').children().siblings().removeClass('selected');
         }
         else {
             $('.zero').addClass('hide').removeClass('selected');
             $('.one').addClass('hide').removeClass('selected');
             $('.two').addClass('hide').removeClass('selected');
-            $('.c0').removeClass('selected');
-            $('.c1').removeClass('selected');
-            $('.c2').removeClass('selected');
+            $('.c0').children().siblings().removeClass('selected');
+            $('.c1').children().siblings().removeClass('selected');
+            $('.c2').children().siblings().removeClass('selected');
         }
         $(e.target).children().siblings().removeClass('selected');
         $(e.target).children().siblings().removeClass('hide');
@@ -45,20 +53,20 @@ $(document).ready(function () {
             if ($(e.target).hasClass('c1')) {
                 $('.one').addClass('hide').removeClass('selected');
                 $('.two').addClass('hide');
-                $('.c1').removeClass('selected');
-                $('.c2').removeClass('selected');
+                $('.c1').children().siblings().removeClass('selected');
+                $('.c2').children().siblings().removeClass('selected');
             }
             else if ($(e.target).hasClass('c2')) {
                 $('.two').addClass('hide').removeClass('selected');
-                $('.c2').removeClass('selected');
+                $('.c2').children().siblings().removeClass('selected');
             }
             else/*if ($(e.target).hasClass('c0')*/ {
                 $('.zero').addClass('hide').removeClass('selected');
                 $('.one').addClass('hide').removeClass('selected');
                 $('.two').addClass('hide').removeClass('selected');
-                $('.c0').removeClass('selected');
-                $('.c1').removeClass('selected');
-                $('.c2').removeClass('selected');
+                $('.c0').children().siblings().removeClass('selected');
+                $('.c1').children().siblings().removeClass('selected');
+                $('.c2').children().siblings().removeClass('selected');
             }
             $(e.target).children().siblings().removeClass('selected');
             $(e.target).children().first().removeClass('selected');
